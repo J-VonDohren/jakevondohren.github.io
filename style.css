@@ -64,7 +64,12 @@ nav a {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    color:#0000FF;
+}
+#projects .project-card h3,
+#projects .project-card p,
+#projects .project-card a {
+    text-align: center;
+    color: #0000FF;
 }
     
 section {
