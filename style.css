@@ -44,21 +44,34 @@ nav a {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 
-#projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  text-align: center; 
-  margin: 0 auto; 
-}
-
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.project-card {
+    width: 60%; /* Adjust as needed */
+    max-width: 600px; /* Optional for limiting size */
+    padding: 20px;
+    border: 1px solid #ddd; /* Optional for styling */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Optional */
+}
+    
+.project-card h3,
+.project-card p,
+.project-card a {
+    text-align: center;
+    text-color: white;
+}
+    
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
     
 section {
