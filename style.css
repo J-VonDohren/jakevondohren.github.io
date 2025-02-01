@@ -9,8 +9,10 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #0073e6;
-    color: white;
+    background-color: #000000;
+    background-image: linear-gradient(43deg, #0000FF 0%, #7F00FF 46%, #A020F0 100%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 nav a {
