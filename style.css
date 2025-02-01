@@ -48,6 +48,14 @@ nav a {
 #projects {
     text-align: center; 
 }
+#projects h2 {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    background-image: linear-gradient(43deg, #0000FF 0%, #7F00FF 46%, #A020F0 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 #projects .projects-container {
     display: flex;
