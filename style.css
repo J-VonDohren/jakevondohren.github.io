@@ -43,6 +43,7 @@ nav a {
 #search-bar:focus {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
 
 #projects {
     text-align: center; 
@@ -53,6 +54,7 @@ nav a {
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
+    width: 100%;
 }
 
 #projects .project-card {
@@ -64,7 +66,7 @@ nav a {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
     
-#projects section {
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
