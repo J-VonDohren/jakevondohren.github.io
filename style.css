@@ -52,18 +52,25 @@ nav a {
     text-align: center;
 }
 .project-card {
-    width: 60%; /* Adjust as needed */
-    max-width: 600px; /* Optional for limiting size */
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centers items inside */
+    justify-content: center;
+    text-align: center;  /* Centers text */
+    width: 60%;  /* Adjust based on preference */
+    max-width: 600px;
     padding: 20px;
-    border: 1px solid #ddd; /* Optional for styling */
+    border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #f9f9f9; /* Optional */
+    background-color: black;
+    margin: 10px 0;  /* Ensures spacing */
 }
     
 .project-card h3,
 .project-card p,
 .project-card a {
     text-align: center;
+    color: white;
 }
     
 .project-card {
@@ -83,6 +90,6 @@ section {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #0073e6;
+    background-color: black;
     color: white;
 }
