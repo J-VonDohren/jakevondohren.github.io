@@ -44,11 +44,13 @@ nav a {
 .self-portrait {
     width: 60px;
     height: 450px;
+    object-fit: cover;
 }
 
 .social-icons {
     width: 20px;
     height: 50px;
+    object-fit: cover;
 }
 
 .search-container {
