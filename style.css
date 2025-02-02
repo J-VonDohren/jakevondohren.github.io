@@ -45,6 +45,14 @@ nav a {
     width: 300px;
     height: 450px;
     object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 10px;
+    margin: 0 10px;
 }
 
 .social-icons {
