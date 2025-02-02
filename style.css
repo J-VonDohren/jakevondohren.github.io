@@ -41,6 +41,15 @@ nav a {
     color: white;
     font-size: 20px;
   }
+.self-portrait {
+    width: 150px;
+    height: auto;
+}
+
+.social-icons {
+    width: 40px;
+    height: auto;
+}
 .search-container {
   margin-bottom: 20px;
   text-align: center;
