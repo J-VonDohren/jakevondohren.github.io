@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 200px;
+    background-color: #08090e;
+    color: white;
+}
+
+head{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+    z-index: 9999;
+}
+header h1{
+    text-align: center;
+    background-color: black;
+    background-image: linear-gradient(43deg, #0000FF 0%, #7F00FF 46%, #A020F0 100%);
+    -webkit-background-clip: text;
+    justify-content: space-between;
+    color: transparent;
+}
+nav a {
+    background-color: black;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+.header-nav a {
+    background-color: black;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.header-nav a:hover {
+    background-color: #00FFFF; /* Light up effect */
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    background-color: none;
+    background-image: linear-gradient(43deg, #0000FF 0%, #7F00FF 46%, #A020F0 100%);
+    -webkit-background-clip: text;
+    justify-content: space-between;
+    color: transparent;
+}
+p{
+    text-align: center;
+    font-style: italic;
+}
+input{
+    background-color: white;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: cyan;
+    margin-bottom: 20px;
+}
+textarea{
+    background-color: white;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: cyan;
+    margin-bottom: 25px;
+}
+input:focus-within{
+    outline: none;
+    border-color: #2a2aec;
+    border-width: 3px;
+}
+textarea:focus-within{
+    outline: none;
+    border-color: #2a2aec;
+    border-width: 3px;
+}
+button{
+    background-color: #2a2aec;
+    border-radius: 20px;
+    border-color: black;
+    font-size: 22px;
+    padding: 10px 18px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+button:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
