@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jake Von Dohren's portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css">
+    <script src="SearchBar.js"></script>
+</head>
+<body>
+    <header class="Header">
+        <h1>Jake Von Dohren's Project Portfolio</h1>
+        <nav class="header-nav">
+            <a href = "index.html#"> About Me</a>
+            <a href="index.html#Skills">Skills</a>
+            <a href="index.html#FeaturedProjects">Featured Projects</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contact-Me.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <section id="projects">
+        <h1>Projects</h1>
+    <section id="SearchBar">
+        <div class="search-container">
+        <input 
+          type="text" 
+          id="search-bar" 
+          placeholder="Search projects for skills..." 
+          oninput="filterProjects()"
+        />
+      </div>
+    </section>
+<div class="projects-container">
+
+     <div class="project-card" data-concepts="C# Code optimisation Code refactoring object oriented programming software testing">
+        <div class="project-Photo">
+            <a href="https://github.com/J-VonDohren/C-_Hospital_System" target="_blank"><Img src="Images/Project-Images/HospitalManagementProject.jpg" class="Project-Image"></a>
+        </div>
+        <div class="Project-Info">
+           <h3><strong><a href="https://github.com/J-VonDohren/C-_Hospital_System" target="_blank" class="project-link">Hospital Application</a></strong></h3>
+           <p>A hospital management system built in C# that streamlines operations using object-oriented programming principles. The project includes robust error handling, performance-optimized code through refactoring, and extensive software testing to ensure reliability and maintainability.
+           </p>
+           <div class="skills-container">
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">Code Optimisation</span>
+                <span class="skill-tag">Code Refactoring</span>
+                <span class="skill-tag">Object Oriented Programming</span>
+                <span class="skill-tag">Software Testing</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card" data-concepts="API's SQLite Relational databases Python Data structures algorithms">
+        <div class="project-Photo">
+            <a href="https://github.com/J-VonDohren/Scalable_To-Do_List" target="_blank"><Img src="Images/Project-Images/ToDoList.png" class="Project-Image"></a>
+        </div>
+        <div class="Project-Info">
+            <h3><strong><a href="https://github.com/J-VonDohren/Scalable_To-Do_List" target="_blank" class="project-link">To-Do application </a></strong></h3>
+            <p>A RESTful to-do list API built with FastAPI, SQLite, and a min-heap priority queue for efficient task prioritisation. Tasks are ranked dynamically based on priority and creation time, ensuring that high-priority tasks are addressed first. The project includes CRUD operations, automated priority updates, and robust database management for scalability.</p>
+            <div class="skills-container">
+                 <span class="skill-tag">API's</span>
+                 <span class="skill-tag">SQLite</span>
+                 <span class="skill-tag">Python</span>
+                 <span class="skill-tag">data structures</span>
+                 <span class="skill-tag">algorithms</span>
+             </div>
+         </div>
+   </div>
+</div>
+    </section>
+</body>
+</html>
