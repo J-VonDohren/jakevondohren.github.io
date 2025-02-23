@@ -1,0 +1,308 @@
+html {
+    scroll-padding-top: 107.88px; /* Adjust this to match the header's height if headers height changes*/
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 200px;
+    background-color: #08090e;
+    color: #333;
+}
+
+head{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+    z-index: 9999;
+}
+header h1{
+    text-align: center;
+    background-color: black;
+    background-image: linear-gradient(43deg, #0000FF 0%, #7F00FF 46%, #A020F0 100%);
+    -webkit-background-clip: text;
+    justify-content: space-between;
+    color: transparent;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+.header-nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.header-nav a:hover {
+    background-color: #00FFFF; /* Light up effect */
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-weight: bold;
+}
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skillset-Organiser{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Ensures 5 skills per row */
+    gap: 1rem;
+    padding: 1rem;
+    color: #ddd;
+}
+
+.skill-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-Container:hover {
+    transform: scale(1.1);
+}
+
+.skill-icon {
+    width: 50px;
+    max-width: 100%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .Skillset-Container {
+        grid-template-columns: repeat(3, 1fr); /* 2 per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .Skillset-Container {
+        grid-template-columns: repeat(2, 1fr); /* 1 per row on mobile */
+    }
+}
+
+
+.Introduction {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr; 
+        width: 100%;
+        height: 600px;
+        background-color: #08090e;
+    }
+
+.half-section {
+    background-color: #08090e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+  }
+  .portrait-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.self-portrait {
+    width: 300px;
+    height: 450px;
+    border-radius: 85%;
+    object-fit: contain;
+    display: block;
+}
+.social-nav {
+    display: flex;
+    gap: 15px; 
+    justify-content: center;
+    margin-top: 10px;
+}
+.social-icons {
+    width: 50px;
+    height: 75px;
+    object-fit: contain;
+    background-color: #08090e;
+}
+
+/* Layout Styles */
+.Self-Introduction-Container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 20px;
+}
+
+.greeting img {
+    margin-left: 10px;
+}
+
+/* Waving Hand Animation */
+.wave {
+    animation: wave-animation 2s normal forwards ease-in-out;
+}
+.wave:hover {
+    animation: wave-animation 2s infinite forwards ease-in-out;
+}
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.typewriter-container p {
+    font-size: 50px;
+    text-align: left;
+    margin: 5px 0;
+}
+
+.typewriter-text{
+    color: #2a2aec;
+    position: absolute;
+}
+.typewriter-text::after {
+    content: "|"; 
+    display: inline-block;
+    animation: blink 0.8s infinite;
+    color: white;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+.About-Me {
+    text-align: left;
+}
+.search-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#search-bar {
+  width: 300px;
+  max-width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+#search-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#FeaturedProjects h1, #projects h1, #Skills h1, #Contact-Me h1{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 0px;
+    background-color: black;
+    background-image: linear-gradient(43deg, #0000FF 0%, #7F00FF 46%, #A020F0 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#projects, #FeaturedProjects{
+    text-align: center; 
+}
+
+#projects .projects-container, #FeaturedProjects .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    color: #00BFFF;
+}
+
+#projects .project-card, #FeaturedProjects .project-card{
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto; 
+    padding-bottom: 20px;
+    border: 1px solid cyan;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #00BFFF;
+    background-color: black;
+}
+#projects .project-card h3,
+#projects .project-card p,
+#projects .project-card a 
+#FeaturedProjects .project-card h3,
+#FeaturedProjects .project-card p,
+#FeaturedProjects .project-card a {
+    text-align: center;
+    color: white;
+}
+#projects .project-Photo img, #FeaturedProjects .project-Photo img{
+    border-radius: 8px;
+    display: flex;
+    max-width: 100%;
+    max-height: 500px;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Skills h2{
+    font-size: 20px;
+    color:#2a2aec;
+}
+#Skills p{
+    padding-top: 10px;
+    color: white;
+    font-style: italic;
+}
+
+.skill-tag {
+
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: 500;
+}
+    
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #08090e;
+    color: white;
+}
