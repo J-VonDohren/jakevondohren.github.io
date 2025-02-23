@@ -1,5 +1,4 @@
 const AspiringPositions = [
-    "FULL STACK DEVELOPER",
     "SOFTWARE ENGINEER",
     "DATA ENGINEER",
     "DATA SCIENTIST",
