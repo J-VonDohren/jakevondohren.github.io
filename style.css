@@ -261,9 +261,11 @@ nav a {
 }
 #projects .project-Photo img, #FeaturedProjects .project-Photo img{
     border-radius: 8px;
-    display: flex;
+    display: inline-flex;
+    width: 100%;
     max-width: 100%;
-    max-height: 500px;
+    height: 300px;
+    max-height: 300px;
 }
 .skills-container {
     display: flex;
