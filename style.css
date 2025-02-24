@@ -278,6 +278,8 @@ nav a {
 
 #Skills h2{
     font-size: 20px;
+    text-align: left;
+    padding-left: 40px;
     color:#2a2aec;
 }
 #Skills p{
